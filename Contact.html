@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us / Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+   
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-transparent"
+    style="backdrop-filter: blur(1px);">
+      <div class="container " id="navBar">
+        <a class="navbar-brand fw-bold fs-4" href="./index.html">
+            <img src="Gagan.jpg" alt="Gagan jha" align="left" style="height: 150px;">
+          </a>
+  
+        <!-- Button for small screens -->
+        <button class="navbar-toggler" type="button" 
+        data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+          <ul class="navbar-nav mx-auto" id="navBarList">
+            <li class="nav-item">
+              <a class="home btn btn-light me-4 my-2" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-light me-4 my-2" href="./About me.html">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-light me-4 my-2" href="./skills.html">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-light me-4 my-2" href="./projects.html">Projects</a>
+              </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-light me-4 my-2" href="./Contact.html">Contact me</a>
+            </li>
+
+        </div>
+      </div>
+    </nav>
+
+</header>
+<section id="contact">
+    <div class="about-container">
+        
+        <h1>Contact Me</h1>
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+
+            <input type="hidden" name="access_key" value="b9c8c70f-bff7-4bcb-bcb9-88e0bdf649dd">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+      </section>
+        <h2>Follow Me</h2>
+        <p>Connect with me on social medias.</p>
+       <!-- Button to toggle social media links -->
+<button id="toggle-social-btn" class="btn btn-primary">Show Social Links</button>
+
+<!-- Social media links -->
+<div class="social-media d-none">
+    <a href="https://www.linkedin.com/in/gagan-jha18/" target="_blank" class="social-icon">Linkedin</a>
+    <a href="https://www.instagram.com/gagan.jha19/" target="_blank" class="social-icon">Instagram</a>
+    <a href="https://www.facebook.com/gagan.jha.1217" target="_blank" class="social-icon">Facebook</a>
+</div>
+
+
+    <script src="contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
